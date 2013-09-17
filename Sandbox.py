@@ -27,26 +27,21 @@ def function_deletion():
 # Coverting Special Characters by Excape Sequence
 # idea from pyratemp sandbox implememtation
 def symbol_conversion():
-    if x= input("&"):
+    if x== input("&"):
         x = x.replace( " &", "&amp;")
-        break();
-    if x = input("<"):
+    if x == input("<"):
         x = x.replace("<", "&lt;")
-        break();
-    if x= input(">"):
+
+    if x== input(">"):
         x = x.replace( " >", "&gt;")
-        break();
-    if x= input("'"):
+  
+    if x== input("'"):
         x = x.replace( " '", "&#39;")
-        break();
 
 # main Function
-main():
-    os.system(" python fibo1.py")
-    resource_limitation()
-    function_deletion()
-    symbol_conversion()
 
+code = file(sys.argv[1]).read()
+exec code
        
  
 
